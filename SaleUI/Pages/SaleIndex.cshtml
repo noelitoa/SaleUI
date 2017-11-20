@@ -1,0 +1,16 @@
+﻿@page
+@model SaleUI.Pages.SaleIndexModel
+@{
+    ViewData["Title"] = "SaleIndex";
+    Layout = "~/Pages/_Layout.cshtml";
+}
+<h2>SaleIndex</h2>
+<form method="POST">
+    <div>Product SKU: <input asp-for="SaleEntry.ProductSKU" /></div>
+    <div>Product Name: <input asp-for="SaleEntry.ProductName" /></div>
+    <input type="submit" />
+</form>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
