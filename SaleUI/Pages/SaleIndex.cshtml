@@ -7,19 +7,71 @@
 <h2>SaleIndex</h2>
 <form method="POST">
     <div class="row">
-        <div class="col-md-4"><label asp-for="SaleEntry.ProductSKU"></label>
-            <input asp-for="SaleEntry.ProductSKU" class="form-control"/>
+        <div class="col-md-4">
+            <label asp-for="SaleEntry.ProductSKU"></label>
+            <input asp-for="SaleEntry.ProductSKU" class="form-control" />
+            <span class="alert-danger" asp-validation-for="SaleEntry.ProductSKU"></span> 
         </div>
     </div>
-    <div>Product Name: <input asp-for="SaleEntry.ProductName" /></div>
-    <div>Description: <input asp-for="SaleEntry.ProductDescription" /></div>
-    <div>Price: <input asp-for="SaleEntry.ProductPrice" /></div>
-    <div>Quantity: <input asp-for="SaleEntry.Quantity" /></div>
-    <div>Branch: <input asp-for="SaleEntry.Branch" /></div>
-    <div>Sold By: <input asp-for="SaleEntry.SoldBy" /></div>
-    <div>Sale Date: <input asp-for="SaleEntry.SaleDate" /></div>
-    <div>Encoded By: <input asp-for="SaleEntry.EncodedBy" /></div>
-    <input type="submit" class="btn btn-primary"/>
+    <div class="row">
+        <div class="col-md-4">
+            <label asp-for="SaleEntry.ProductName"></label>
+            <input asp-for="SaleEntry.ProductName" class="form-control"/>
+            <span class="alert-danger" asp-validation-for="SaleEntry.ProductName"></span> 
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <label asp-for="SaleEntry.ProductDescription"></label>
+            <input asp-for="SaleEntry.ProductDescription" class="form-control"/>
+            <span class="alert-danger" asp-validation-for="SaleEntry.ProductSKU"></span> 
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <label asp-for="SaleEntry.ProductPrice"></label>
+            <input asp-for="SaleEntry.ProductPrice" class="form-control"/>
+            <span class="alert-danger" asp-validation-for="SaleEntry.ProductPrice"></span> 
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <label asp-for="SaleEntry.Quantity"></label>
+            <input asp-for="SaleEntry.Quantity" class="form-control" />
+            <span class="alert-danger" asp-validation-for="SaleEntry.ProductSKU"></span> 
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <label asp-for="SaleEntry.Branch"></label>
+            <input asp-for="SaleEntry.Branch" class="form-control"/>
+            <span class="alert-danger" asp-validation-for="SaleEntry.Branch"></span> 
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <label asp-for="SaleEntry.SoldBy"></label>
+            <input asp-for="SaleEntry.SoldBy" class="form-control"/>
+            <span class="alert-danger" asp-validation-for="SaleEntry.SoldBy"></span> 
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <label asp-for="SaleEntry.SaleDate"></label>
+            <input asp-for="SaleEntry.SaleDate" class="form-control"/>
+            <span class="alert-danger" asp-validation-for="SaleEntry.SaleDate"></span> 
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <label asp-for="SaleEntry.EncodedBy"></label>
+            <input asp-for="SaleEntry.EncodedBy" class="form-control"/>
+            <span class="alert-danger" asp-validation-for="SaleEntry.EncodedBy"></span> 
+        </div>
+    </div>
+    <br />
+    <input type="submit" value="Save" class="btn btn-primary" />
+    <button class="btn btn-danger">Cancel</button>
 </form>
 
 @section Scripts {
