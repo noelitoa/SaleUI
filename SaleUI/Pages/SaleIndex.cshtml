@@ -6,7 +6,11 @@
 }
 <h2>SaleIndex</h2>
 <form method="POST">
-    <div>Product SKU: <input asp-for="SaleEntry.ProductSKU" /></div>
+    <div class="row">
+        <div class="col-md-4"><label asp-for="SaleEntry.ProductSKU"></label>
+            <input asp-for="SaleEntry.ProductSKU" class="form-control"/>
+        </div>
+    </div>
     <div>Product Name: <input asp-for="SaleEntry.ProductName" /></div>
     <div>Description: <input asp-for="SaleEntry.ProductDescription" /></div>
     <div>Price: <input asp-for="SaleEntry.ProductPrice" /></div>
@@ -15,7 +19,7 @@
     <div>Sold By: <input asp-for="SaleEntry.SoldBy" /></div>
     <div>Sale Date: <input asp-for="SaleEntry.SaleDate" /></div>
     <div>Encoded By: <input asp-for="SaleEntry.EncodedBy" /></div>
-    <input type="submit" />
+    <input type="submit" class="btn btn-primary"/>
 </form>
 
 @section Scripts {

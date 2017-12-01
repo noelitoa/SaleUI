@@ -41,7 +41,7 @@ namespace SaleUI.Pages
             
             var stringContent = new StringContent(JsonConvert.SerializeObject(saleEntry), Encoding.UTF8,
                 "application/json");
-            var response = await client.PostAsync(uri + "salentry", stringContent);
+            var response = await client.PostAsync(uri + "saleentry", stringContent);
             if (response.IsSuccessStatusCode)
             {
                 return RedirectToPage("/SaleIndex");
