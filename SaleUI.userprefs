@@ -1,0 +1,22 @@
+﻿<Properties StartupConfiguration="{F0F986AA-2D4F-40BA-BC7A-4F381EDAFB1C}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SaleUI Status">
+    <Files>
+      <File FileName="SaleUI/appsettings.json" Line="1" Column="1" />
+      <File FileName="SaleUI/Pages/SaleIndex.cshtml.cs" Line="1" Column="1" />
+      <File FileName="SaleUI/Properties/launchSettings.json" Line="24" Column="43" />
+      <File FileName="SaleUI/Models/SaleEntry.cs" Line="1" Column="1" />
+      <File FileName="SaleUI/Program.cs" Line="21" Column="19" />
+      <File FileName="SaleUI/Startup.cs" Line="1" Column="1" />
+      <File FileName="SaleUI/bundleconfig.json" Line="1" Column="1" />
+      <File FileName="SaleUI Status" />
+      <File FileName="SaleUI Status" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.SaleUI PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

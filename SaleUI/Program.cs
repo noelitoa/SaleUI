@@ -18,6 +18,7 @@ namespace SaleUI
             var configuration = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json")
+                //.AddJsonFile("bundleconfig.json")
                 .Build();
 
             //Configure logger
@@ -44,6 +45,8 @@ namespace SaleUI
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
+                   .UseUrls("http://*:44213")
+                   .UseKestrel()
                 .Build();
     }
 }
